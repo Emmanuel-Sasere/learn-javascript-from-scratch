@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+
+<div>
+  <p>Cart Quantity: ${cartQuantity}</p>
+  <button onclick="console.log(`Cart Quantity ${cartQuantity += 4}`)">
+    +4
+  </button>
+  <button onclick="console.log(`Cart Quantity ${cartQuantity += 5}`)">
+    +5
+  </button>
+  <button onclick="console.log(`Cart Quantity ${cartQuantity -= 1}`)">
+    Remove From Cart
+  </button>
+  <button onclick="console.log(`Cart Quantity ${cartQuantity -= 2}`)">
+    -2
+  </button>
+  <button onclick="console.log(`Cart Quantity ${cartQuantity -= 3}`)">
+    -3
+  </button>
+</div>
+
+  <script>
+  
+    let name = 'Sasere';
+
+    console.log(`My name is: ${name}`);
+// =====================================
+
+    let coffeePrice = 5;
+    let bagelsPrice = 3;
+    let soupPrice = 9;
+    let costOrder = ((1 * coffeePrice) + (2 * bagelsPrice) + (1 * soupPrice));
+
+    console.log (`${name} ordered 1 coffee, 2 bagels, and 1 soup. The total cost is $${costOrder.toFixed(2)}.`);
+   //================================
+    let taxCharge = (costOrder * 0.1);
+    let totalCost = costOrder + taxCharge;
+    console.log(`The total cost including tax is $${totalCost.toFixed(2)}`)
+// ================================================
+
+let cartQuantity = 0;
+console.log(cartQuantity)
+
+</script>
+</body>
+
+</html>
